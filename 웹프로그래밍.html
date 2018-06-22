@@ -2,40 +2,56 @@
 <HTML>
 <HEAD>
 	<title>웹 프로그래밍</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function () {
+			
+			for(var i=1;i<=11;i++){
+				var alt = $("#2017 a:nth-child("+i+") > img").attr("alt");
+				if(alt != "")
+					$("#2017 a:nth-child("+i+")").attr("href",alt+".html");
+			}
+			for(var i=1;i<=6;i++){
+				var alt = $("#2018 a:nth-child("+i+") > img").attr("alt");
+				if(alt != "")
+					$("#2018 a:nth-child("+i+")").attr("href",alt+".html");
+			}
+		});
+	</script>
 </HEAD>
 <BODY style="background-color:silver;">
 
 <HR>
 
-<table width=100%>
+<table id="2017" width=100%>
 <caption align="top"> 2017년 관람작 </caption>
 <tr align="CENTER">
 	<td><marquee direction=left behavior=alternate scrollamount=10>
-		<img src="Logan.jpg" alt="Logan" style="width:300px;height:450px">
-		<img src="ThePrison.jpg" alt="Prison" style="width:300px;height:450px">
-		<img src="WonderWoman.jpg" alt="WW" style="width:300px;height:450px">
-		<img src="SpidermanHomecoming.jpg" alt="SH" style="width:300px;height:450px">
-		<img src="Dunkirk.jpg" alt="Dunkirk" style="width:300px;height:450px">
-		<img src="Annabelle.jpg" alt="Annabelle" style="width:300px;height:450px">
-		<img src="KingsmanGoldencircle.jpg" alt="KG" style="width:300px;height:450px">
-		<img src="ThorRagnarok.jpg" alt="TR" style="width:300px;height:450px">
-		<img src="MyTomorrowYourYesterday.jpg" alt="MTYY" style="width:300px;height:450px">
-		<img src="StarWarsLastJedi.jpg" alt="SWLJ" style="width:300px;height:450px">
-		<img src="WalterMitty.jpg" alt="WM" style="width:300px;height:450px">
+		<a target="frame"><img src="Logan.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="ThePrison.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="WonderWoman.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="SpidermanHomecoming.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="Dunkirk.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="Annabelle.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="KingsmanGoldencircle.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="ThorRagnarok.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="MyTomorrowYourYesterday.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="StarWarsLastJedi.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="WalterMitty.jpg" alt="" style="width:300px;height:450px"></img></a>
 	</marquee></td>
 </tr>
 </table>
 <HR>
-<table width=100%>
+<table id="2018" width=100%>
 <caption align="top"> 2018년 관람작 </caption>
 <tr align="CENTER">
 	<td><marquee direction=left behavior=alternate scrollamount=10>
-		<img src="blackpanther.jpg" alt="BP" style="width:300px;height:450px">
-		<img src="RPO.jpg" alt="RPO" style="width:300px;height:450px">
-		<img src="averngersinfinitewar.png" alt="AIW" style="width:300px;height:450px">
-		<img src="Deadpool2.jpg" alt="DP2" style="width:300px;height:450px">
-		<img src="SOLO.jpg" alt="SSS" style="width:300px;height:450px">
-		</marquee></td>
+		<a target="frame"><img src="blackpanther.jpg" alt="BlackPanther" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="RPO.jpg" alt="ReadyPlayerOne" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="averngersinfinitewar.png" alt="AvengersInfiniteWar" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="Deadpool2.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"><img src="SOLO.jpg" alt="" style="width:300px;height:450px"></img></a>
+		<a target="frame"></marquee></td>
 </tr>
 </table>
 </BODY>
